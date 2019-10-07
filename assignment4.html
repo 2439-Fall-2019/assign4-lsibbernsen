@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!-- Lucas Sibbernsen
+            assignment4.html
+            INFO2439
+            Thoendel
+            fall 2019
+        -->
+        <title>Lucas Sibbernsen | INFO 2439 | Assignment 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="themes/assignment4.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+            <div data-role="header" data-position="fixed"
+            data-id="headernav" data-theme="a">       
+            </div>
+
+            <div data-role="page">
+
+                    <div data-role="header" data-add-back-btn="true">
+                        <a href="" data-rel="back">Go back...</a>
+                        <h1>Lucas Sibbernsen</h1>
+                    </div>
+                    <header>
+                    <h1>Assignment #4</h1>
+                    <h1>Bistro Customer Survey</h1>
+                    </header>
+                    <div role="main" class="ui-content">
+                            <form action="http://lolberding.portfolios.mccinfo.net/info_survey/bistrosurvey_insert.php" method="post">
+            <fieldset data-role="controlgroup">
+                <legend>How would you rate your meal today?</legend>
+                <label for="meal">meal</label>
+                <select name="meal_rate" id="meal_rate">
+                    <option value="1 - Poor">1 - Poor</option>
+                    <option value="2 - Needs Work">2 - Needs Work</option>
+                    <option value="3 - Fair">3 - Fair</option>
+                    <option value="4 - Good">4 - Good</option>
+                    <option value="5 - Excellent">5 - Excellent</option>
+                </select>
+            </fieldset>
+            <fieldset data-role="controlgroup">
+                    <legend>How would you rate your service today?</legend>
+                    <label for="service">service</label>
+                    <select name="service_rate" id="service_rate">
+                        <option value="1 - Poor">1 - Poor</option>
+                        <option value="2 - Needs Work">2 - Needs Work</option>
+                        <option value="3 - Fair">3 - Fair</option>
+                        <option value="4 - Good">4 - Good</option>
+                        <option value="5 - Excellent">5 - Excellent</option>
+                    </select>
+            </fieldset>
+            <fieldset data-role="controlgroup">
+                    <legend>How would you rate your overall experience today?</legend>
+                    <label for="experience">experience</label>
+                    <select name="overall_exp" id="overall_exp">
+                        <option value="1 - Poor">1 - Poor</option>
+                        <option value="2 - Needs Work">2 - Needs Work</option>
+                        <option value="3 - Fair">3 - Fair</option>
+                        <option value="4 - Good">4 - Good</option>
+                        <option value="5 - Excellent">5 - Excellent</option>
+                    </select>
+            </fieldset>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Would you recommend this restaurant to a friend?</legend>
+                    <input type="checkbox" name="recommend_rest"
+                        id="yes" value="Yes">                       
+                </fieldset>
+            <fieldset datarole="controlgroup">
+                <div class="ui-field-contain">
+                        <label for="name">Name:</label>
+                        <input type="text" name="bname" id="bname" value=""  />
+                    </div>
+                </fieldset>
+            <fieldset datarole="controlgroup">
+                    <div class="ui-field-contain">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" value=""  />
+                    </div>
+                </fieldset>           
+            <input type="submit" name="submit" value="Send"   />
+                    </form>
+
+                    <div data-role="footer" data-position="fixed"
+                    data-id="footernav" data-theme="a">
+                            <h2>Created By: <a href="mailto:lesibbernsen@mail.mccneb.edu">Lucas Sibbernsen</a></h2>                                      
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!-- Lucas Sibbernsen
+            default.html
+            INFO2439
+            Thoendel
+            fall 2019
+        -->
+        <title>Lucas Sibbernsen | INFO 2439 | test9</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+            <div data-role="page">
+                    <div data-role="header">
+                        <h1>Form Demo</h1>
+                    </div>
+                    <div role="main" class="ui-content">
+                        <form action="echo.html" method="post">
+                            <label for="test">Test:</label>
+                            <input type="checkbox" data-role="flipswitch" name="test" id="test">
+
+                            <label for="gender">Gender:</label>
+                            <input type="checkbox" data-role="flipswitch" name="gender"
+                            id="gender" data-off-text="Male" data-on-text="Female"
+                            data-wrapper-class="custom-size-flipswitch">
+                <input type="submit" name="submit" value="Send"   />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
