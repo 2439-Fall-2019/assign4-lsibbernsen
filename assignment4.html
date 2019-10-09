@@ -10,11 +10,11 @@
         <title>Lucas Sibbernsen | INFO 2439 | Assignment 4</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="themes/assignment4.min.css" />
-        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="theme/themes/assignment4theme.min.css" />
+        <link rel="stylesheet" href="theme/themes/jquery.mobile.icons.min.css" />
     </head>
     <body>
             <div data-role="header" data-position="fixed"
@@ -22,9 +22,8 @@
             </div>
 
             <div data-role="page">
-
-                    <div data-role="header" data-add-back-btn="true">
-                        <a href="" data-rel="back">Go back...</a>
+                    <div data-role="header" >
+                        <a href="" data-rel="back" data-ajax="false">Go back...</a>
                         <h1>Lucas Sibbernsen</h1>
                     </div>
                     <header>
@@ -32,7 +31,7 @@
                     <h1>Bistro Customer Survey</h1>
                     </header>
                     <div role="main" class="ui-content">
-                            <form action="http://lolberding.portfolios.mccinfo.net/info_survey/bistrosurvey_insert.php" method="post">
+                            <form action="http://emthoendel.faculty.mccinfo.net/2439/bistrosurvey_insert.php" method="post">
             <fieldset data-role="controlgroup">
                 <legend>How would you rate your meal today?</legend>
                 <label for="meal">meal</label>
@@ -68,8 +67,12 @@
             </fieldset>
             <fieldset data-role="controlgroup" data-type="horizontal">
                     <legend>Would you recommend this restaurant to a friend?</legend>
-                    <input type="checkbox" name="recommend_rest"
-                        id="yes" value="Yes">                       
+                    <input type="radio" name="recommend_rest"
+                        id="yes" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="recommend_rest"
+                        id="no" value="No">  
+                    <label for="no">No</label>                      
                 </fieldset>
             <fieldset datarole="controlgroup">
                 <div class="ui-field-contain">
